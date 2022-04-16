@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="masthead">
+        <h1><img src="{% static 'logo.jpeg' %}" alt="logo"></h1>
+        <p>We're powering the future of the internet</p>
+    </div>
+    <div>
+    <nav>
+    </nav>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
